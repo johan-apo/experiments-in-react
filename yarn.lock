@@ -230,6 +230,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/animejs@npm:^3.1.6":
+  version: 3.1.6
+  resolution: "@types/animejs@npm:3.1.6"
+  checksum: da54d122376212ce9fd3a57d385e4b800b3ec4026dcf55d99a32c0aedf799b169abdea9f1e54b5d81a4be0edd8e0c9b245a57bf48778d1d59c607582f34aabdc
+  languageName: node
+  linkType: hard
+
 "@types/json5@npm:^0.0.29":
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
@@ -275,6 +282,22 @@ __metadata:
   version: 0.16.2
   resolution: "@types/scheduler@npm:0.16.2"
   checksum: b6b4dcfeae6deba2e06a70941860fb1435730576d3689225a421280b7742318d1548b3d22c1f66ab68e414f346a9542f29240bc955b6332c5b11e561077583bc
+  languageName: node
+  linkType: hard
+
+"@types/three@npm:^0.146.0":
+  version: 0.146.0
+  resolution: "@types/three@npm:0.146.0"
+  dependencies:
+    "@types/webxr": "*"
+  checksum: f8ea5ba032f6aaa1cb5ad7dfbbd13851e8cba04365bc7fa9a5320ea7e9a2538ea5f2426391f690f0465347ade15cc145d5dc84b1730d8cceea89f746231f667c
+  languageName: node
+  linkType: hard
+
+"@types/webxr@npm:*":
+  version: 0.5.0
+  resolution: "@types/webxr@npm:0.5.0"
+  checksum: 891af0e96a229f45584d89daa3101232862da2ded14076aa631b2e12deb4e4b91fa35ff8d8d5ab4613aa8adce0870bd32cd61f070c1bc70d37303c515e1ae6ac
   languageName: node
   linkType: hard
 
@@ -367,6 +390,13 @@ __metadata:
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
   checksum: 874972efe5c4202ab0a68379481fbd3d1b5d0a7bd6d3cc21d40d3536ebff3352a2a1fabb632d4fd2cc7fe4cbdcd5ed6782084c9bbf7f32a1536d18f9da5007d4
+  languageName: node
+  linkType: hard
+
+"animejs@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "animejs@npm:3.2.1"
+  checksum: 6939171bed17d6b28307747e564d33e93312c26169b98498c833117d86f174ce7a318469bfd81716c223860a6d13bd76b761e79e765b86b2a2f851963caaa851
   languageName: node
   linkType: hard
 
@@ -552,14 +582,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "client@workspace:."
   dependencies:
+    "@types/animejs": ^3.1.6
     "@types/node": 18.11.9
     "@types/react": 18.0.25
     "@types/react-dom": 18.0.9
+    "@types/three": ^0.146.0
+    animejs: ^3.2.1
     eslint: 8.28.0
     eslint-config-next: 13.0.4
+    gsap: ^3.11.3
     next: 13.0.4
     react: 18.2.0
     react-dom: 18.2.0
+    react-ga: ^3.3.1
+    three: ^0.146.0
     typescript: 4.9.3
   languageName: unknown
   linkType: soft
@@ -1302,6 +1338,13 @@ __metadata:
   version: 1.0.4
   resolution: "grapheme-splitter@npm:1.0.4"
   checksum: 0c22ec54dee1b05cd480f78cf14f732cb5b108edc073572c4ec205df4cd63f30f8db8025afc5debc8835a8ddeacf648a1c7992fe3dcd6ad38f9a476d84906620
+  languageName: node
+  linkType: hard
+
+"gsap@npm:^3.11.3":
+  version: 3.11.3
+  resolution: "gsap@npm:3.11.3"
+  checksum: b97d33ca1fa28dc3b4ce957fa49226f6dcdea39eddd4ffaf4af2b9fe681ff974731bdb8717e50110842267187064659e2f7874c6d1936de4162f8c7721c09676
   languageName: node
   linkType: hard
 
@@ -2068,6 +2111,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-ga@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "react-ga@npm:3.3.1"
+  peerDependencies:
+    prop-types: ^15.6.0
+    react: ^15.6.2 || ^16.0 || ^17 || ^18
+  checksum: 3026976d0249fbf80e7b5dad7707964198064d7ac460f3397de40524e76dd6c29dead0900f850e2bd3135a86a9b083af8cda9cfa087f195852bf8d2b17c1fcfb
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -2397,6 +2450,13 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
+  languageName: node
+  linkType: hard
+
+"three@npm:^0.146.0":
+  version: 0.146.0
+  resolution: "three@npm:0.146.0"
+  checksum: c6eb2005d97c599de7f4eccf73c4b1e8731c353ca3e7b9bf9d3bc2b52a8e288c59c06c148fd93df16df323b28938947227a37e07cc6fbe04aa8f8725e49caa8a
   languageName: node
   linkType: hard
 
