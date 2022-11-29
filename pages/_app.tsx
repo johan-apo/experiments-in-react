@@ -4,6 +4,8 @@ import ReactGA from "react-ga";
 import Script from "next/script";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { MantineProvider } from "@mantine/core";
+import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -30,7 +32,17 @@ export default function App({ Component, pageProps }: AppProps) {
           gtag('config', 'G-FTN0MS7BB0');
         `}
       </Script>
-      <Component {...pageProps} />
+      <MantineProvider
+        withGlobalStyles
+        withNormalizeCSS
+        theme={{
+          colorScheme: "dark",
+        }}
+      >
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </MantineProvider>
     </>
   );
 }
