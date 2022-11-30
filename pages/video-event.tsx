@@ -47,7 +47,7 @@ function StaticVideo() {
   return (
     <video width="320" height="240" controls>
       <source src="/movie.mp4" type="video/mp4" />
-      Your browser doesn't support the video tag
+      Your browser doesn&apos;t support the video tag
     </video>
   );
 }
