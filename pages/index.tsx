@@ -1,15 +1,29 @@
-import { Box, Button, Checkbox, Group, TextInput, Title } from "@mantine/core";
+import {
+  Box,
+  Button,
+  Checkbox,
+  Container,
+  Group,
+  TextInput,
+  Title,
+} from "@mantine/core";
 import { showNotification } from "@mantine/notifications";
 import { useForm } from "@mantine/form";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main>
-      <Title align="center" order={3}>
-        For &quot;Form Interaction&quot; event
-      </Title>
-      <Form />
-    </main>
+    <>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <Container>
+        <Title align="center" order={3}>
+          For &quot;Form Interaction&quot; event
+        </Title>
+        <Form />
+      </Container>
+    </>
   );
 }
 

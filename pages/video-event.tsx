@@ -1,8 +1,12 @@
 import { Container, Title } from "@mantine/core";
+import Head from "next/head";
 
 export default function Videos() {
   return (
     <>
+      <Head>
+        <title>Video event page</title>
+      </Head>
       <RenderVideo
         component={
           <YouTubeIframe src="https://www.youtube.com/embed/nTFEUsudhfs?enablejsapi=1" />

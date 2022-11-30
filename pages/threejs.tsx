@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { RefObject, useEffect, useLayoutEffect, useRef } from "react";
 import {
   AxesHelper,
@@ -98,8 +99,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <>
+      <Head>
+        <title>ThreeJS</title>
+      </Head>
       <canvas ref={canvasRef} />
-    </main>
+    </>
   );
 }

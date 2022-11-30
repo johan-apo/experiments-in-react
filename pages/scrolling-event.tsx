@@ -7,6 +7,7 @@ import {
   Text,
   Title,
 } from "@mantine/core";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 
 interface Post {
@@ -32,7 +33,10 @@ export default function ScrollingEvent() {
   }, []);
 
   return (
-    <Container>
+    <>
+      <Head>
+        <title>Scrolling event</title>
+      </Head>
       {loading ? (
         <Loading />
       ) : posts.length > 0 ? (
@@ -42,7 +46,7 @@ export default function ScrollingEvent() {
           No posts available
         </Title>
       )}
-    </Container>
+    </>
   );
 }
 
