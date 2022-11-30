@@ -5,6 +5,7 @@ import Script from "next/script";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { MantineProvider } from "@mantine/core";
+import { NotificationsProvider } from "@mantine/notifications";
 import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -39,9 +40,11 @@ export default function App({ Component, pageProps }: AppProps) {
           colorScheme: "dark",
         }}
       >
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <NotificationsProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </NotificationsProvider>
       </MantineProvider>
     </>
   );
